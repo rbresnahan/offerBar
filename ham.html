@@ -1,0 +1,38 @@
+<!DOCYTPE html>
+<html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ham-style.css" type="text/css" rel="stylesheet">
+    
+</head>    
+
+<body>
+
+    <div class="burger-container">
+        <div class="burger">
+            <div class="line" id="ten"></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        
+        
+        
+
+		var burgerdiv = document.querySelectorAll(".burger");
+
+		for (var i = 0; i < burgerdiv.length; i++) {
+
+			burgerdiv[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+			});
+
+		}
+
+	</script>
+    
+    
+</body>
+</html>
